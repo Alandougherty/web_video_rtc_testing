@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+</head>
+
+<body>
+
+    <!-- connects to the server and displays results -->
+
+    <div class="container" id="chat">
+        <div id="chat-window">
+            <div id="output"></div>
+        </div>
+
+        <input id="handle" type="text" placeholder="name" />
+        <input id="message" type="text" placeholder="message" />
+        <button id="submit">Send</button>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Content for the first column -->
+                 remote
+                 <video id="rVideo" autoplay="autoplay"></video>
+            </div>
+            <div class="col-md-6">
+                <!-- Content for the second column -->
+                 local
+                <video id="lVideo" autoplay="autoplay"></video>
+            </div>
+        </div>
+        <span id="displayId"></span>
+        <input type="text" id="connId" class="form-control" placeholder="Enter Connection Id" required>
+        <button id="conn_button" class="btn btn-success btn-block" type="submit">Connect</button>
+        <button id="call_button" class="btn btn-danger btn-block" type="submit">Call</button>
+    </div>
+
+
+    <!-- <script src="http://localhost:3000/socket.io/socket.io.js" async defer></script> -->
+
+    <script src="socket.io/socket.io.js"></script>  
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+    <script src="/clientS.js"></script>
+    <!-- <script>
+            var socket = io();
+        </script> -->
+
+</body>
+
+</html>
