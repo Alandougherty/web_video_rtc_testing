@@ -13,13 +13,13 @@ const message = document.getElementById('message');
 
 // Emit events
 
-button.addEventListener('click', () =>
+/*button.addEventListener('click', () =>
 {
     socket.emit('chat', {
         message: message.value,
         handle: handle.value
     })
-}) 
+}) */
 
 // Listen to events
 

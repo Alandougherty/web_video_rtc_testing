@@ -27,7 +27,8 @@ io.on('connection', (socket)=>{
 
 });
 
-
+//app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'))
 // http server listening on port
 
 

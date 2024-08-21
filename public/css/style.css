@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #04AA6D;
+}
+
+/* Style for evenly spaced columns */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Style for bold buttons */
+.button {
+    font-weight: bold;
+}
+
+/* Different colors for form buttons */
+.red-button {
+    background-color: red;
+}
+
+.blue-button {
+    background-color: blue;
+}
+
+.green-button {
+    background-color: green;
+}
+
+#container input[type=submit].btn{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+/* Style for form button input types 
+input[type=button].form-button,
+input[type=submit].form-button,
+input[type=reset].form-button {
+     Add your styles here *
+}/
