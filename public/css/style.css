@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    background-color: #04AA6D;
+    background-color: #fffcf3;
 }
 
 /* Style for evenly spaced columns */
@@ -12,9 +12,16 @@ body {
 }
 
 .column {
-    flex: 1;
-    margin-right: 10px;
-}
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 /* Style for bold buttons */
 .button {

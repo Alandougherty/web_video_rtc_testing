@@ -30,21 +30,34 @@ Test text
     </div>-->
 
 
+    <div class="divTable">
+        <div class="divTableBody">
+        <div class="divTableRow">
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        </div>
+        <div class="divTableRow">
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        </div>
+        </div>
+        </div>
+        <!-- DivTable.com -->
 
     <div class="container">
-        <div class="column">
-            <div class="col-md-6">
+        <div class="column">            
                 <!-- Content for the first column -->
-                 remote
-                 <video id="rVideo" autoplay="autoplay"></video>
+                 remote video <br>
+                 <video style='border: 1px solid #fff;' poster="Default_pfp.svg.png" id="rVideo" autoplay="autoplay"></video>
             </div>
-            <div class="col-md-6">
+            <div class="column">
                 <!-- Content for the second column -->
-                 local
+                 local video<br>
                 <video id="lVideo" autoplay="autoplay"></video>
             </div>
         </div>
-        <span id="displayId"></span>
+        Your ID: <span id="displayId"></span><br>
+        <span id="displayId"></span><br>
         <input type="text" id="connId" class="form-control" placeholder="Enter Connection Id" required>
         <button id="conn_button" class="btn btn-success btn-block" type="submit">Connect</button>
         <button id="call_button" class="btn btn-danger btn-block" type="submit">Call</button>
